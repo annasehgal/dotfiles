@@ -1,0 +1,13 @@
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Setting PATH for Python 3.12
+PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:${PATH}"
+export PATH
+EMSDK_QUIET=1 /bin/bash --login -c "source $HOME/emsdk/emsdk_env.sh"
+
+# Added by Toolbox App
+export PATH="$PATH:$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
+
+# Created by `pipx` on 2026-04-24 21:58:47
+export PATH="$PATH:$HOME/.local/bin"

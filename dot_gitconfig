@@ -1,0 +1,21 @@
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+
+[gpg]
+    program = gpg
+    format = ssh
+
+[commit]
+    gpgsign = true
+
+[pull]
+    rebase = true
+
+[init]
+    defaultBranch = main
+
+[core]
+    excludesfile = $HOME/.gitignore_global
